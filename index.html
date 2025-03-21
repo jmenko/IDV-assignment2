@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Assignment 2: Visualisation Critiques</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fortuna&display=swap');
+        
+        body {
+            font-family: 'Fortuna', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        .header, .footer {
+            background-color: lightgrey;
+            text-align: center;
+            padding: 15px;
+            font-size: 20px;
+        }
+
+        .section {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 1100px; /* Expand section width */
+            border-radius: 8px;
+            border: 1px solid black; /* Thin black border */
+        }
+
+        .container {
+            display: flex;
+            align-items: flex-start;
+            gap: 40px; /* Increase spacing between columns */
+            padding: 0 30px; /* Move content closer to margins */
+        }
+
+        .image-column, .text-column {
+            flex: 1; /* Equal space for both columns */
+        }
+
+        .image-column img {
+            max-width: 100%; /* Ensure images fit properly */
+            height: auto;
+            display: block;
+        }
+
+        .caption {
+            font-size: 12px; /* Smaller caption size */
+            color: gray;
+            text-align: left; /* Align captions to the left */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Assignment 2: Visualisation Critiques</h1>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <!-- Left: Image and caption -->
+            <div class="image-column">
+                <figure>
+                    <img src="cna.png" alt="Graph Screenshot">
+                    <figcaption class="caption">Figure 1: Racial Stereotyping Chart from CNA. <a href="https://www.channelnewsasia.com/singapore/racial-religious-harmony-trust-stereotypes-workplace-discrimination-ips-survey-4912531" target="_blank">Source Link</a></figcaption>
+                </figure>
+            </div>
+
+            <!-- Right: Explanation -->
+            <div class="text-column">
+                <h2>Visualisation 1: Racial Stereotyping</h2>
+                <h3><b>Data Issues</b></h3>
+                <ul>
+                    <li><b>Risk of Misinterpretation</b> - The chart could mislead readers into thinking the survey measures opinions about each race rather than opinions held by each racial group.</li>
+                    <li><b>X-Axis Confusion</b> - The x-axis only provides percentage markers, but seem redundant based on the way the percentages are broken down in the chart itself.</li>
+                    <li><b>Skewed Representation</b> - The layout makes any trend analysis difficult. It is harder to interpret patterns intuitively or accurately.</li>
+                </ul>
+                
+                <h3><b>Idiom Issues</b></h3>
+                <ul>
+                    <li><b>Ambiguous Wording</b> - “I have a good idea of their behaviour” is vague and is immediately associated with stereotyping, which the chart is meant to convey.</li>
+                </ul>
+                
+                <h3><b>Suggested Improvements</b></h3>
+                <ul>
+                    <li>Title can be changed from that of the question asked to one which provides greater clarity. E.g. "How Different Racial Groups Perceive the Role of Race in Behaviour"</li>
+                    <li>The X-Axis can be changed from the percentage to a title which explains that the numbers above reflect the racial group’s own beliefs. This also reduces misinterpretation.</li>
+                    <li>Align agreement levels across the racial groups for easier comparison.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <!-- Left: Images and captions -->
+            <div class="image-column">
+                <figure>
+                    <img src="st1.png" alt="Graph Screenshot">
+                    <figcaption class="caption">Figure 2: Acceptance Towards Different Groups Chart from Straits Times.</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="st2.png" alt="Graph Screenshot">
+                    <figcaption class="caption">Figure 3: Screenshot of the interactive graph from Straits Times.</figcaption>
+                    <figcaption class="caption">Chart: Straits Times Graphics. Source: Institute of Policy Studies (IPS) <a href="https://www.straitstimes.com/singapore/politics/singaporeans-more-accepting-of-all-races-in-personal-relationships-study" target="_blank">Source Link</a></figcaption>
+                </figure>
+            </div>
+
+            <!-- Right: Explanation -->
+            <div class="text-column">
+                <h2>Visualisation 2: Acceptance Towards Different Races</h2>
+                <h3><b>Data Issues</b></h3>
+                <ul>
+                    <li><b>Risk of Misinterpretation</b> - The chart could mislead readers into thinking the survey measures opinions about each race rather than opinions held by each racial group.</li>
+                    <li><b>Lack of X-Axis</b> - This combined with the fact that scrolling is required makes it difficult to recall what is being visualised.</li>
+                    <li><b>Questioning Reliability</b> - Lack of info on relative sample sizes leads to confusion about why responses are so homogenous across racial groups and if it is due to visualisation or related to data collection / sampling.</li>
+                </ul>
+                
+                <h3><b>Idiom Issues</b></h3>
+                <ul>
+                    <li><b>Incomplete Context</b> - The visualisation requires scrolling which results in the loss of the headers and the category info, which is also absent in the interactive element of the visualisation.</li>
+                </ul>
+                
+                <h3><b>Suggested Improvements</b></h3>
+                <ul>
+                    <li>Using fixed / sticky headers to not lose info when scrolling.</li>
+                    <li>Take advantage of the interactive nature to ensure data isn’t lost when scrolling through labeling.</li>
+                    <li>Use small multiples to better visualise the clusters alongside each other.</li>
+                    <li>Label the X-axis - "Proportion of respondents from each racial group who accept different personal relationships" which also reduces confusion.</li>
+                    <li>Provide sample size and note on if weighting was applied to match the racial proportions of Singapore.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Julian Menko - 1009439</p>
+        <p>MSc Urban Science, Policy and Planning</p>
+        <p>02.526 - Interactive Data Visualisation</p>
+    </div>
+
+</body>
+</html>
